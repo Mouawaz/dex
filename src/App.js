@@ -4,6 +4,8 @@ import PokemonList from './components/PokemonList';
 import PokemonDetail from './components/PokemonDetail';
 import './App.css';
 
+// No LLM has been hurt in the making of this app (Threatened? Different story)
+
 function App() {
   return (
     <Router>
