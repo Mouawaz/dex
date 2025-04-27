@@ -23,12 +23,32 @@ body {
   padding: 1.5rem 2rem;
   text-align: center;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative; 
 }
 
 .app-header h1 {
   margin: 0;
   font-size: 2.5rem;
   font-weight: 700;
+}
+
+.about-link {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.about-link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-50%) scale(1.05);
 }
 
 .app-content {
@@ -51,4 +71,20 @@ body {
 
 .app-footer a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .app-header {
+    padding: 1rem;
+  }
+  
+  .app-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .about-link {
+    right: 1rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
 }
